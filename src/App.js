@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar'
+import TextField from './components/TextField'
+import SelectField from './components/SelectField'
+import MultiSelectField from './components/MultiSelectField'
+// import DateField from './components/DateField'
+// import Footer from './components/Footer'
+import SwipeableTemporaryDrawer from './components/SideDrawer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <TextField label='Search'/>
+      <SelectField /> 
+      <MultiSelectField />
+      <SwipeableTemporaryDrawer />
+      {/* <DateField /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
